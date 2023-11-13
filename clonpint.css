@@ -1,0 +1,309 @@
+*{
+    overflow: auto;
+}
+
+
+.navbar-pinterest{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: white;
+}
+
+#boton1{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    border: 1px;
+    border-radius: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 71px;
+    font-weight: 700;
+}
+
+#boton1:hover{
+    cursor: pointer;
+}
+
+#boton2{
+    border: 1px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 25px;
+    width: 70px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#boton2:hover{
+    cursor: pointer;
+}
+
+.pinterest-icon{
+    border: 10px;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.pinterest-icon:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#finder{
+    height: 30px;
+    width: 500px;
+    margin-top: 7px;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    flex-grow: 1;
+    background-color: rgb(223, 221, 221);
+}
+
+#finder:hover{
+    opacity: 70%;
+}
+
+#profile-img{
+    margin-right: 10px;
+    border: 1px;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#profile-img:hover{
+    background-color: rgb(186, 188, 189);
+    cursor: pointer;
+}
+
+#notifications{
+    border: 1px;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#notifications:hover{
+    background-color: rgb(204, 206, 207);
+    cursor: pointer;
+}
+
+#message{
+    border: 1px;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#message:hover{
+    background-color: rgb(204, 206, 207);
+    cursor: pointer;
+}
+
+.contenedor{
+    margin-top: 50px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.contenedor1{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#contenedor2{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#contenedor3{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#contenedor4{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+
+#contenedor5{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+#contenedor6{
+    background-color: white;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.card-image{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-block: 20px;
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.foto{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    overflow: auto;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.card-image:hover .imgcard{
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card-image .imgcard:hover{
+    opacity: 77%;
+}
+
+.card-image:hover .foto{
+    opacity: 50%;
+    cursor: zoom-in;
+}
+
+.imgcard{
+    z-index: 10;
+    transition: opacity 0.3s;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    position: absolute;
+    color: aliceblue;
+    border: 1px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 34px;
+    width: 83px;
+    background-color: rgb(202, 27, 15);
+    margin-right: 7px;
+    opacity: 0;
+}
+
+#link{
+    z-index: 10;
+    transition: opacity 0.3s;
+    position: absolute;
+    color: black;
+    border: 1px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 20px;
+    width: 88px;
+    background-color: whitesmoke;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    opacity: 0;
+    bottom: 0;
+    font-weight: bold;
+}
+
+.card-image:hover #link{
+    opacity: 70%;
+}
+
+.card-image:hover #link:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#boton{
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+#botonright{
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    opacity: 0;
+}
+
+.card-image:hover #boton{
+    opacity: 1;
+    background-color: rgb(163, 163, 163);
+}
+
+.card-image #boton:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.card-image:hover #botonright{
+    opacity: 50%;
+}
+
+.card-image #botonright:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    opacity: 80%;
+}
+
+@media screen and (max-width: 600px){
+    .contenedor{
+        background-color: rgb(196, 214, 214);
+        align-items: center;
+        justify-content: center;
+        display: grid;
+    }
+    #finder{
+        display: none;
+    }
+}
+
+
