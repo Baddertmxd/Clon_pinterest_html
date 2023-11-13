@@ -1,4 +1,4 @@
-# Proyectos_html
+# Proyecto html clon pinterest
 Alumno: Guillermo Amezcua Medina
 Proyectos html devf 
 
